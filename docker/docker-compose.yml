@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres:/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=supplybridge_challenge_secret
+      - POSTGRES_USER=supplybridge_challenge_user
+      - POSTGRES_DB=supplybridge_challenge_db

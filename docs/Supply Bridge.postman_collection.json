@@ -1,0 +1,1270 @@
+{
+	"info": {
+		"_postman_id": "6e145668-a4a2-4777-954f-278ba26fefcb",
+		"name": "Supply Bridge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33104371"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Me",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/auth/me",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"auth",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Username\",\r\n    \"password\": \"Username123456!\",\r\n    \"confirmPassword\": \"Username123456!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/auth/register",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Username\",\r\n    \"password\": \"Username123456!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/auth/login",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Oem Origin",
+			"item": [
+				{
+					"name": "Get Origins",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/oemorigin/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"oemorigin",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Origins",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"OemOrigin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/oemorigin/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"oemorigin",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Origins",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"OemOrigin2\",\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/oemorigin/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"oemorigin",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Origins",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/oemorigin/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"oemorigin",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Production Region",
+			"item": [
+				{
+					"name": "Get Production Regions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/productionregion/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"productionregion",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Production Regions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ProductionRegion\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/productionregion/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"productionregion",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Production Regions",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ProductionRegion2\",\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/productionregion/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"productionregion",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Production Regions",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/productionregion/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"productionregion",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "Get Brands",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/brand/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"brand",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Brands",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Brand\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/brand/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"brand",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Brands",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Brand2\",\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/brand/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"brand",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Brands",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/brand/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"brand",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehicle Type",
+			"item": [
+				{
+					"name": "Get Vehicle Types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/vehicletype/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"vehicletype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Vehicle Types",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"VehicleType\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/vehicletype/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"vehicletype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Vehicle Types",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"VehicleType2\",\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/vehicletype/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"vehicletype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Vehicle Types",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/vehicletype/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"vehicletype",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Propulsion",
+			"item": [
+				{
+					"name": "Get Propulsions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/propulsion/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"propulsion",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Propulsions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Propulsion\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/propulsion/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"propulsion",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Propulsions",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Propulsion2\",\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/propulsion/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"propulsion",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Propulsions",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/propulsion/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"propulsion",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Component Category",
+			"item": [
+				{
+					"name": "Get Component Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/componentcategory/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"componentcategory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Component Categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ComponentCategory\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/componentcategory/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"componentcategory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Component Categories",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ComponentCategory2\",\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/componentcategory/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"componentcategory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Component Categories",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/componentcategory/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"componentcategory",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Maker",
+			"item": [
+				{
+					"name": "Get Makers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/maker/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"maker",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Makers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Maker\",\r\n    \"brandId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/maker/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"maker",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Makers",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Maker2\",\r\n    \"brandId\": 1,\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/maker/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"maker",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Makers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/maker/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"maker",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Model",
+			"item": [
+				{
+					"name": "Get Models",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/model/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"model",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Models",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Model\",\r\n    \"brandId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/model/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"model",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Models",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Model2\",\r\n    \"brandId\": 1,\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/model/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"model",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Models",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/model/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"model",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Propulsion Type",
+			"item": [
+				{
+					"name": "Get Propulsion Types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/propulsiontype/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"propulsiontype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Propulsion Types",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"PropulsionType\",\r\n    \"propulsionId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/propulsiontype/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"propulsiontype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Propulsion Types",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"PropulsionType2\",\r\n    \"propulsionId\": 1,\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/propulsiontype/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"propulsiontype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Propulsion Types",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/propulsiontype/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"propulsiontype",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Supplier",
+			"item": [
+				{
+					"name": "Get Suppliers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/supplier/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"supplier",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Suppliers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shortName\": \"SupplierShort\",\r\n    \"longName\": \"SupplierLong\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/supplier/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"supplier",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Suppliers",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shortName\": \"SupplierShort\",\r\n    \"longName\": \"SupplierLong\",\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/supplier/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"supplier",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Suppliers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/supplier/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"supplier",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/product/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idOEM\": \"OEM-123123123\",\r\n    \"oemOriginId\": 1,\r\n    \"productionRegionId\": 1,\r\n    \"makerId\": 1,\r\n    \"brandId\": 1,\r\n    \"modelId\": 1,\r\n    \"vehicleTypeId\": 1,\r\n    \"propulsionId\": 1,\r\n    \"propulsionTypeId\": 1,\r\n    \"vehicleProductionCountry\": \"China\",\r\n    \"modelYear\": \"2004\",\r\n    \"supplierId\": 1,\r\n    \"L0\": \"L0\",\r\n    \"L1\": \"L1\",\r\n    \"componentCategoryId\": 1,\r\n    \"productName\": \"Engine\",\r\n    \"additionalInformations\": \"Info\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/product/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Products",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idOEM\": \"OEM-1231231232\",\r\n    \"oemOriginId\": 1,\r\n    \"productionRegionId\": 1,\r\n    \"makerId\": 1,\r\n    \"brandId\": 1,\r\n    \"modelId\": 1,\r\n    \"vehicleTypeId\": 1,\r\n    \"propulsionId\": 1,\r\n    \"propulsionTypeId\": 1,\r\n    \"vehicleProductionCountry\": \"China2\",\r\n    \"modelYear\": \"2004\",\r\n    \"supplierId\": 1,\r\n    \"L0\": \"L02\",\r\n    \"L1\": \"L12\",\r\n    \"componentCategoryId\": 1,\r\n    \"productName\": \"Engine2\",\r\n    \"additionalInformations\": \"Info2\",\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/product/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Products",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/product/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJFa3JlbSIsImlhdCI6MTcxNTMxNTU5MCwiZXhwIjoxNzE1MzE5MTkwfQ.2nXN6Yl9UctWwt-AgVpVWr0WKGjxxLn1aUuUwDpb-IU",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
